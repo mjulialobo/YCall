@@ -38,7 +38,7 @@ Apesar de iniciante, acredito que posso agregar no time de Devs, e com certeza, 
 <p> Após preencher as informações e clicar no botão "simular", um modal aparece na tela do usuário com a comparação dos valores da tarifa. A tarifa sem o plano está 
 em vermelho para que o usuário a veja como "negativa", e portanto, a adesão plano como positivo.</p>
 
-<p> Escolhi uma paleta de cores em tons de verde-água, azul e laranja, e criei a logotipo utilizando o <a href="https://www.canva.com/"> Canva.<a></p>
+<p> Escolhi uma paleta de cores em tons de verde-água, azul e laranja, e criei a logotipo utilizando o <a href="https://www.canva.com/"target="_blank"> Canva.<a></p>
 <p> Optei por um design simples para não poluir a tela do usuário, e o modal para impedir que o usuário precise carregar duas páginas diferentes. </p>
 
    
