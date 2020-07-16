@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Conheça os Planos</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-items">
+            <div class="header-image">
+                <img src="assets/whitelogo.png" alt="Logo de Telzir">
+            </div>
+            <div class="header-links">
+                <a href="/index">Meu Telzir</a>
+                <a href="/index">Sobre nós</a>
+                <a href="/index">Serviços</a>
+                <a href="/index">Ajuda</a>
+            </div>
+        </div>
+    </header>
+    <div class="card">
+        <div class="content">
+            <div class="introduction">
+                <h2>Quer ver as vantagens dos nossos planos? Faça uma simulação!</h2>
+                <p>Selecione as informações nos campos abaixo:</p>
+            </div>
+            <div class="select-grid">
+                <div class="select-from">
+                    <div class="select-title">
+                        <h4>Ligando de onde?</h4>
+                    </div>
+                    <select id="from" required="required" onchange="changeToOptions(event)">
+                        <option value="selectFrom" disabled="disabled" selected="selected">Selecionar DDD</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                    </select>
+                    <input type="hidden" name="from" required="required">
+                </div>
+
+                <div class="select-to">
+                    <div class="select-title">
+                        <h4>Pra onde?</h4>
+                    </div>
+                    <select id="to" disabled="disabled" required="required">
+                        <option value="SelectTo" disabled="disabled" selected="selected">Selecionar DDD</option>
+                        <option value="011">011</option>
+                        <option value="016" class="">016</option>
+                        <option value="017" class="">017</option>
+                        <option value="018" class="">018</option>
+
+                    </select>
+
+                </div>
+
+                <div class="select-plan">
+                    <div class="select-title">
+                        <h4>Escolha um plano!</h4>
+                    </div>
+                    <select name="falemais" required="required">
+                        <option value="" disabled="disabled">Selecionar plano</option>
+                        <option value="30">FaleMais 30</option>
+                        <option value="60">FaleMais 60</option>
+                        <option value="120">FaleMais 120</option>
+                    </select>
+                </div>
+
+                <div class="select-duration">
+                    <div class="time">
+                        <div class="select-title">
+                            <h4>Duração( em minutos)</h4>
+                        </div>
+                        <input type="number" id="quantity" name="quantity" min="1" max="" placeholder="Minutos mensais" required="required">
+                    </div>
+                </div>
+                <button>Simular</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="modal" class="hide">
+        <div class="modal-content">
+            <div class="comparison">
+                <h3>Valor cobrado:</h3>
+                <div class="selected-plan">
+                    <h3>Com o plano:</h3>
+                    <p>X reais</p>
+                </div>
+                <div class="no-plan">
+                    <h3>Sem o plano:</h3>
+                    <p>2x reais</p>
+                </div>
+            </div>
+            <a href="/">Voltar</a>
+        </div>
+        <script src="/scripts/scripts.js"></script>
+    </body>
+</html>

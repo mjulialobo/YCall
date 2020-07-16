@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --primary-color: #489fb5;
+    --secondary-color: #ffa62b;
+    --text-orange: #f59713;
+    --secondary-text-orange: #fa9508;
+    --light-background-orange: #ffe4bf;
+    --text-blue: #16697a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://image.freepik.com/free-vector/illustrated-friends-video-calling_23-2148504108.jpg);
+    background-repeat: no-repeat;
+    background-position: 60vw bottom;
+    background-size: 40%;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 8px 0;
+    width: 100vw;
+}
+
+.header-items {
+    display: flex;
+    margin: 0 auto;
+    max-width: 940px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-image img {
+    width: 100px;
+}
+
+.header-links {
+    margin-top: 14px;
+}
+
+.header-links a {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 16px;
+    transition: 400ms;
+}
+
+.header-links a:hover {
+    color: var(--secondary-color);
+}
+
+
+/*==CONTENT==*/
+
+.card {
+    width: 50%;
+    margin: 5vh auto;
+}
+
+.introduction {
+    width: 650px;
+}
+
+.introduction h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: var(-text-orange);
+}
+
+.introduction p {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-blue);
+    margin-bottom: 24px;
+}
+
+
+/*==SELECT==*/
+
+.select-grid {
+    display: grid;
+    grid-template-rows: 5fr;
+    gap: 16px;
+}
+
+.select-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: black;
+}
+
+select,
+input {
+    padding: 4px;
+    width: 200px;
+    border-radius: 8px;
+    border: solid var(--secondary-color);
+    font-size: 14px;
+    background-color: white;
+}
+
+option .hide {
+    visibility: hidden;
+}
+
+button {
+    width: 200px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px;
+    transition: 400ms;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+
+/*==MODAL==*/
+
+#modal {
+    background-color: #02131ac0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    transition: 400ms;
+}
+
+.modal-content {
+    width: 600px;
+    height: auto;
+    margin: 24vh auto;
+    background-color: black;
+    border-radius: 10px;
+    border: var(--primary-color) solid;
+}
+
+.comparison {
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.modal-content h3 {
+    margin-top: 8px;
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+.selected-plan h3,
+.no-plan h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.selected-plan p,
+.no-plan p {
+    margin-top: 10px;
+    font-size: 52px;
+    font-weight: 700;
+    color: #30c222;
+    border-radius: 10px;
+}
+
+.no-plan p {
+    color: red;
+}
+
+#modal a {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#modal a:hover {
+    color: var(--secondary-color);
+}
+
+#modal.hide {
+    display: none;
+}
