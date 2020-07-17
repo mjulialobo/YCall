@@ -41,7 +41,7 @@ Apesar de iniciante, acredito que posso agregar no time de Devs e com certeza, m
 
 <p> Para demonstração, todos os links levam para index.html </p>
 
-<p> Escolhi uma paleta de cores que segue a arte do background, em tons de vermelho, azul escuro e preto, e criei a logotipo utilizando o <a href="https://www.canva.com/"> Canva.</a></p>
+<p> Escolhi uma paleta de cores que segue a arte do background, em tons de vermelho, azul escuro e preto, e detalhe em azul claro, e criei a logotipo utilizando o <a href="https://www.canva.com/"> Canva.</a></p>
 <p> Optei por um design simples para não poluir a tela do usuário. </p>
 
 <p> Espero que gostem da minha versão da Telzir! </p>
