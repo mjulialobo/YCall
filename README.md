@@ -1,4 +1,20 @@
+<h1 align="center">
+<img src="https://github.com/mjulialobo/Telzir/blob/master/public/assets/logo.png"/>
+  <br>
 
+<br>  
+<br>
+Projeto para vaga de Frontend Junior (iniciante)
+</h1>
+
+<p align="center">Realizado por <a href="https://www.linkedin.com/in/mariajulialobo/"> Maria Julia Lobo! </a> </p>
+<hr />
+
+
+<h2> <img src= "https://cdn.onlinewebfonts.com/svg/img_256848.png" width="50px" height="50px" align="center"/> Sobre mim </h2>
+
+<p> Tecnologia sempre foi um interesse meu, mas como muitos, tinha o preconceito de que a área era só para aqueles que se destacavam nas matérias de exatas,
+e que sobreviveriam a anos de cálculo na faculdade. </p>
 <P>Por conta desse pensamento, tentei ingressar na área de TI de outras formas, e por 2 anos e meio atuei como
 Assessora de Imprensa na aboutCOM (especializada em empresas de tecnologia), onde cuidei da comunicação de clientes como
  ESET, Hitachi Vantara, Orange Bussiness Services e Micron.</p>
