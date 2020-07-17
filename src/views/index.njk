@@ -5,7 +5,7 @@
     <meta name="HandheldFriendly" content="true">
     <title>Conheça os Planos</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="https://kit.fontawesome.com/bcd7f656b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -15,10 +15,10 @@
                 <img src="assets/whitelogo.png" alt="Logo de Telzir">
             </div>
             <div class="header-links">
-                <a href="/index">Meu Telzir</a>
-                <a href="/index">Sobre nós</a>
-                <a href="/index">Serviços</a>
-                <a href="/index">Ajuda</a>
+                <a href="/">Meu Telzir</a>
+                <a href="/">Sobre nós</a>
+                <a href="/">Serviços</a>
+                <a href="/">Ajuda</a>
             </div>
         </div>
     </header>
@@ -33,21 +33,20 @@
                     <div class="select-title">
                         <h4>Ligando de onde?</h4>
                     </div>
-                    <select id="from" required="required" onchange="changeToOptions(event)">
+                    <select id="from" onchange="changeToOptions(event)"class="div-select">
                         <option value="selectFrom" disabled="disabled" selected="selected">Selecionar DDD</option>
                         <option value="011">011</option>
                         <option value="016">016</option>
                         <option value="017">017</option>
                         <option value="018">018</option>
                     </select>
-                    <input type="hidden" name="from" required="required">
                 </div>
 
                 <div class="select-to">
                     <div class="select-title">
                         <h4>Pra onde?</h4>
                     </div>
-                    <select id="to" disabled="disabled" required="required">
+                    <select id="to" disabled="disabled" class="div-select">
                         <option value="SelectTo" disabled="disabled" selected="selected">Selecionar DDD</option>
                         <option value="011">011</option>
                         <option value="016" class="">016</option>
@@ -62,7 +61,7 @@
                     <div class="select-title">
                         <h4>Escolha um plano!</h4>
                     </div>
-                    <select name="falemais" required="required">
+                    <select id="falemais" required="required">
                         <option value="" disabled="disabled">Selecionar plano</option>
                         <option value="30">FaleMais 30</option>
                         <option value="60">FaleMais 60</option>
@@ -78,26 +77,41 @@
                         <input type="number" id="quantity" name="quantity" min="1" max="" placeholder="Minutos mensais" required="required">
                     </div>
                 </div>
-                <button>Simular</button>
+                <button onclick="calculating(event)">Simular</button>
             </div>
-
         </div>
     </div>
     <div id="modal" class="hide">
-        <div class="modal-content">
+        <div class="modal-content" id="modal-content">
+            <div class="exit">
+                <a href="/">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+
+            <p id="main-text">Valor cobrado no final do mês:</p>
+
             <div class="comparison">
-                <h3>Valor cobrado:</h3>
-                <div class="selected-plan">
-                    <h3>Com o plano:</h3>
-                    <p>X reais</p>
-                </div>
                 <div class="no-plan">
-                    <h3>Sem o plano:</h3>
-                    <p>2x reais</p>
+                    <img src="/assets/bag.svg" alt="saco de dinheiro" id="icon-one">
+                    <h3 id="noplan-result"></h3>
+                    <p>Sem o plano</p>
+
+                </div>
+                <hr>
+                <div class="selected-plan">
+                    <img src="/assets/pig.svg" alt="nota de dinheiro" id="icon-two" >
+                    <h3 id="plan-result"></h3>
+                    <p>Com o plano</p>
                 </div>
             </div>
-            <a href="/">Voltar</a>
+            <div class="get-plan" id="hide">
+            <button>Comprar plano</button>
+            </div>
+
         </div>
+
         <script src="/scripts/scripts.js"></script>
+        <script src="/scripts/calculator.js"></script>
     </body>
 </html>
