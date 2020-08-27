@@ -7,12 +7,12 @@
 Simulador de planos de operadora
 </h1>
 
-<p align="center">Realizado por <a href="https://www.linkedin.com/in/mariajulialobo/"> Maria Julia Lobo! </a> </p>
+<p align="center">Por <a href="https://www.linkedin.com/in/mariajulialobo/"> Maria Julia Lobo! </a> </p>
 <hr />
 
 <h2> <img src= "https://i.pinimg.com/originals/51/52/ae/5152aecf9ab2b53914e2684c8165572f.png" width="50px" height="50px" align="center"/> O que foi criado? </h2>
 
-<Desenvolvi a aplicação web com alguns conhecimentos, e trabalhei na responsividade para Iphones 6,7,8 Plus e X.</p>
+Desenvolvi a aplicação web com alguns conhecimentos, e trabalhei na responsividade para Iphones 6,7,8 Plus e X.</p>
 
 <p>Utilizando HTML, CSS, Javascript e Node.js, desenvolvi uma página em que o usuário preenche as informações necessárias para o cálculo da tarifa com e sem o plano da operadora YCall. </p>
 <p> Após preencher as informações e clicar no botão "simular", um modal aparece na tela do usuário comparando os valores. Para reforçar que o plano é uma excelente escolha, utilizei dois <a href="https://www.flaticon.com/home"> ícones<a> e cores diferentes.</p>
